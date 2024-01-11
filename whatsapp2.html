@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Whatsapp Message Sender</title>
+	<link rel="stylesheet" href="whatsapp2.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<div class="login-box">
+			<form action="">
+				<h1>Fill the form</h2>
+				
+				<div class="input-box" id="inline">
+					<span class="icon">
+					  <ion-icon name="fullname"></ion-icon>
+					</span>
+					<input class="data1" id="name" type="text" required>
+					<label for="name">Full name</label>
+				  </div>
+
+
+
+				  <div class="input-box" id="inline">
+					<span class="icon">
+					  <ion-icon name="mail"></ion-icon>
+					</span>
+					<input class="data1" id="email" type="email" required>
+					<label for="email">Email</label>
+				  </div>
+
+
+
+
+				  <div class="input-box" id="inline">
+					<span class="icon">
+					  <ion-icon name="number"></ion-icon>
+					</span>
+					<input class="data" id="number" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required></input>
+					<label for="number">Phone Number</label>
+				  </div>
+
+				  <div class="input-box" id="inline">
+					<span class="icon">
+					  <ion-icon name="subject"></ion-icon>
+					</span>
+					<input class="data" id="subject" type="text" required></input>
+					<label for="subject">Subject</label>
+				  </div>
+
+				  <div class="input-box">
+					<span class="icon">
+					  <ion-icon name="message"></ion-icon>
+					</span>
+					<datalist id="message">
+						<option id="message" value="Thank you for entrusting us with your project. We acknowledge receipt and are actively working on it."></option>
+						<option id="message" value="We wanted to share a quick update on your project. As of now, [specific progress achieved]."></option>
+						<option id="message" value="We wanted to inform you that there might be a slight delay in the completion of your project."></option>
+						<option id="message" value="Great news! Your project is now completed."></option>
+					</datalist>
+					<input  class="data" id="mess" type="search" list="message" name="message" required>
+						
+					
+					<label for="message">Choose a message from this list:</label>
+					</select>
+					</div>
+
+				  
+				
+			</br><button id="button">
+				<div class="svg-wrapper-1">
+				  <div class="svg-wrapper">
+					<svg
+					  xmlns="http://www.w3.org/2000/svg"
+					  viewBox="0 0 24 24"
+					  width="24"
+					  height="24"
+					>
+					  <path fill="none" d="M0 0h24v24H0z"></path>
+					  <path
+						fill="currentColor"
+						d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+					  ></path>
+					</svg>
+				  </div>
+				</div>
+				<span>Send</span>
+			  </button>
+			  
+				
+			</form>
+		</div>
+	</div>
+	<script src="whatsapp2.js"></script>
+</body>
+</html>

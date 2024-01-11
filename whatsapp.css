@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+.wrapper {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height:100vh;
+    width:100%;
+    background: url(https://tse2.mm.bing.net/th?id=OIP.coKsd7HoUlweDqVJO-gQeQHaEo&pid=Api&P=0&h=180) no-repeat;
+    background-size: cover;
+} 
+
+.login-box {
+    position: relative;
+    width: 850px;
+    height: 600px;
+    background: url(https://tse2.mm.bing.net/th?id=OIP.5ahxA-IBq2NQuUpjz7fzSgHaEK&pid=Api&P=0&h=180) no-repeat;
+    background-size:cover;
+    /* background-color: rgb(223, 208, 73); */
+    border-radius: 60px 140px 70px 170px;
+    border: 2px rgba(14, 1, 1, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px); 
+}
+.login-box:hover{
+    /* background: #b81797; */
+    /* color: #fff; */
+    /* border-radius: 5px; */
+    cursor: pointer;
+    box-shadow: 0 0 5px #eff1f1,
+                0 0 25px #eff1f1,
+                0 0 50px #eff1f1,
+                0 0 100px #eff1f1;
+}
+h1 {
+    font-size:3.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#d71a1a;
+    text-align:center;
+    margin-bottom: 50px;
+   
+}
+.input-box {
+    position:relative;
+    width:310px;
+    margin:30px 40px;
+    border-bottom:1px solid #c30505;
+    display:inline-block;
+}
+
+.input-box label {
+    position:absolute;
+    top:50%;
+    left:5px;
+    transform:translateY(-50%);
+    font-size:20px;
+    font-weight: bold;
+    color:#3048d1;
+    pointer-events:none;
+    transition:.5s;
+    display: flex;
+}
+.input-box input:focus  ~ label,
+.input-box input:valid  ~ label {
+    top:-5px;
+}
+.input-box input {
+    width:100%;
+    height:50px;
+    background:transparent;
+    border:none;
+    outline:none;
+    font-size:1em;
+    color:#d10a0a;
+    padding:0 35px 0 5px;
+}
+.input-box .mes{
+    width:100%;
+    height:50px;
+    background:transparent;
+    border:blanchedalmond;
+    outline:none;
+    font-size:1em;
+    color:#d10a0a;
+    padding:0 35px 0 5px;
+}
+.input-box .icon {
+    position:absolute;
+    right:8px;
+    top:50%;
+    color: #ea1515;
+    transform: translateY(-50%);
+    display: flex;
+}
+/* button {
+    width:100%;
+    height:40px;
+    background-color:#d40c9b;
+    border:none;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:1em;
+    color:#000;
+    font-weight:500;
+} */
+/* button {
+    position: relative;
+    left: 350px;
+    display: inline-block;
+    padding: 10px 80px;
+    color: #2c6b6e;
+    font-size: 16px;
+    border-radius:40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 10px;
+    letter-spacing: 4px
+  }
+  
+  button:hover {
+    cursor:context-menu;
+    background: #69757b;
+    color: #fff;
+    border-radius: 50px;
+    transform: scale(1.5);
+  }
+   */
+   button {
+    width:140px;
+    height:40px;
+    position: relative;
+    left: 350px;
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  button:hover span {
+    transform: translateX(5em);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  
+@media (max-width:500px) {
+    .login-box {
+      width:100%;
+      height:100vh;
+      border:none;
+      border-radius:0;
+    }
+    .input-box {
+      width:290px;
+    }
+  }
